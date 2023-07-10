@@ -1,0 +1,18 @@
+pipeline {
+    agent none
+
+    environment {
+        DB_URL = "54.160.69.79"
+    }
+
+    stages {
+        stage('BUILD') {
+            steps {
+                sh '''
+                    sleep 5
+                    echo "This is for build"
+                '''
+            }
+        }
+    }
+}
