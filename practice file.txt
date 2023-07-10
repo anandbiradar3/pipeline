@@ -11,6 +11,7 @@ Pipeline{
                 sh '''
                     sleep 5
                     echo "this is for build"
+                   '''
             }
         }
     }
